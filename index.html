@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Busca Tinfoil</title>
+
+  <!-- Manifesto PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4285f4">
+
+  <!-- Config para mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Tinfoil Search">
+  <link rel="apple-touch-icon" href="https://tinfoil.io/images/logo.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background: #f4f4f4;
+    }
+    h1 img {
+      width: 120px;
+      height: auto;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #aaa;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4285f4;
+      color: white;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    input[type="submit"]:hover {
+      background-color: #357ae8;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <img src="https://tinfoil.io/images/logo.png" alt="Tinfoil Logo">
+  </h1>
+  <form method="get" action="https://www.google.com/search">
+    <input type="hidden" name="q" value="site:tinfoil.io">
+    <input type="text" name="q" placeholder="Digite o nome do jogo...">
+    <input type="submit" value="Buscar">
+  </form>
+</body>
+</html>
