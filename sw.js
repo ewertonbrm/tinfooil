@@ -1,6 +1,6 @@
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open('tinfooil-cache').then(cache => cache.addAll([
+    caches.open('tinfoil-cache').then(cache => cache.addAll([
       '/',
       '/index.html',
       '/manifest.json'
