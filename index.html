@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tinfoil Title</title>
+
+  <!-- Manifesto -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Ícones -->
+  <link rel="icon" href="icon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="icon-512x512.png" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+  <script>
+    setTimeout(() => {
+    window.location.href = "https://tinfoil.io/Title/";
+  }, 5000);
+  </script>
+</head>
+<body>
+  <p>Carregando Tinfoil...</p>
+</body>
+</html>
